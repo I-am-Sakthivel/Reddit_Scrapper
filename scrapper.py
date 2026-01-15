@@ -43,5 +43,5 @@ def scrape(subname):
         cw=csv.DictWriter(f,keys)
         cw.writeheader()
         cw.writerows(posts)
-        return str(os.path.abspath('Data/'+sub.display_name+".csv"))
+        return str(os.path.abspath('tmp/'+sub.display_name+".csv"))
     return "Sub Does not exist"
