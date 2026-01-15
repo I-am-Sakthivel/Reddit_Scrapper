@@ -36,8 +36,8 @@ def scrape(subname):
                 posts.append(d)
     except:
         return "Sub Does not exist"
-    os.makedirs('Data',exist_ok=True)
-    f=open('Data/'+sub.display_name+".csv",'w')
+    os.makedirs('/tmp',exist_ok=True)
+    f=open('/tmp/'+sub.display_name+".csv",'w')
     if len(posts)>0:
         keys=posts[0].keys()
         cw=csv.DictWriter(f,keys)
