@@ -23,7 +23,7 @@ def scrape(subname):
     posts=[]
     #title + query + answer
     try:
-        coll=sub.hot(limit=1000)
+        coll=sub.hot(limit=100)
     except:
         return "Sub Does not exist"
     try:
